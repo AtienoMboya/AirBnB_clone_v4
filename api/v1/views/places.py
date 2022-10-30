@@ -37,7 +37,7 @@ def get_place(place_id):
     place = storage.get(Place, place_id)
     if not place:
         abort(404)
-
+    print("place", place)
     return jsonify(place.to_dict())
 
 
