@@ -110,6 +110,7 @@ div.reviews h2 {
     font-size: 16px;
     border-bottom: 1px solid #DDDDDD;
     padding-bottom: 5px;
+    text-align: left;
 }
 
 div.reviews ul {
@@ -124,4 +125,8 @@ div.reviews ul li h3 {
 
 div.reviews ul li p {
     font-size: 14px;
+}
+
+.hide_reviews {
+    display: none;
 }
