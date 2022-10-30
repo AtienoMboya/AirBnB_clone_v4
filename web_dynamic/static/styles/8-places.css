@@ -99,3 +99,29 @@
 .user {
   margin-bottom: 1.5%;
 }
+
+/* My addition */
+
+div.reviews {
+    margin-top: 40px;
+}
+
+div.reviews h2 {
+    font-size: 16px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 5px;
+}
+
+div.reviews ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+div.reviews ul li h3 {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+div.reviews ul li p {
+    font-size: 14px;
+}

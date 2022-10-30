@@ -72,6 +72,16 @@ button:hover {
     max-height: 300px;
 }
 
+.popover > ul > li > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.popover > ul > li > div > h2 {
+    margin-bottom: 0;
+}
+
 .popover::-webkit-scrollbar{
     width: 0px;
 }
