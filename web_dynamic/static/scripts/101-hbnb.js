@@ -99,7 +99,20 @@ $('document').ready(function () {
           }
         }).done((reviews) => {
           review.append($('<h2></h2>').text(`${reviews.length} Review${reviews.length > 1 ? 's' : ''}`));
-          const reviewList = $('<ul></ul>');
+          const reviewList = $('<ul></ul>').addClass('hide_reviews');
+          const mySpan = $('<span></span>');
+          mySpan.text('show');
+          mySpan.click(function () {
+            if ($(this).text() === 'show') {
+              reviewList.removeClass('hide_reviews');
+              $(this).text('hide');
+            } else {
+              reviewList.addClass('hide_reviews');
+              $(this).text('show');
+            }
+          });
+          console.log(mySpan);
+          review.append(mySpan);
           for (let j = 0; j < reviews.length; j++) {
             const reviewItem = $('<li></li>');
             $.ajax({
